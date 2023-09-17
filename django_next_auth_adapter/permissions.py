@@ -12,7 +12,7 @@ class AllowRemoteAuthServer(BasePermission):
         if token is None:
             return False
 
-        if not token == remote_auth_token:
+        if token != remote_auth_token:
             return False
 
         return True
