@@ -18,6 +18,7 @@ class User(AbstractBaseUser):
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
     # ...
+
 ```
 
 ## Installation
@@ -93,10 +94,6 @@ urlpatterns = [
     path('next-auth/', include('django_next_auth_adapter.urls')),  # Include the package's URLs here
 ]
 ```
-
-Make sure to replace `YourViewName1` and `YourViewName2` with the actual view names you want to use from the package.
-
-Now, the package's URLs are included under the 'next-auth/' path in your project. You can customize the path as needed.
 
 ## Signals
 
